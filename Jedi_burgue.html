@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jedi_Burgues</title>
-    <link rel="stylesheet" href="style_do_jedy_burgue.css">
+    <title>Jedi-Burgue</title>
+    <link rel="stylesheet" href="jedi-style.css">
 </head>
 <body>
+    
 <h1 class="titulo_inicial">Bem vindo ao Jedi_Burgue</h1>
 <p class="paragrafo">Esse e o Jedi_Burgue um local a onde você pode comer e fazer pedidos a vontade</p>
 
@@ -15,13 +16,14 @@
 
 
     <div class="conteiner">
-    <h2 class="Nome_burgue">The Dark Side </h2>
+    <h2 class="Nome_burgue">The_Dark_Side </h2>
     <p>Inspiração::Darth Vader</p>
     <p>uma bebida escura (pode ser à base de amora ou refrigerante de cola) com um detalhe em vermelho (cereja ou xarope</p>
     <img src="darth vader.jfif" alt="">
     <p>Coma avontade</p>
     <p class="Preço">Preço:35;00</p>
-    <button class="botão">Adicionar ao carrinho</button>
+    <button onclick="adicionarThe_Dark_Side()" class="botão">Adicionar ao carrinho</button>
+    <button onclick="removerThe_Dark_Side()" class="botão">Remover</button>
     </div>
 
     <div class="conteiner">
@@ -31,7 +33,8 @@
     <img src="darth-a.jfif" alt="">
     <p>Coma avontade</p>
     <p class="Preço">Preço:20;00</p>
-    <button class="botão">Adicionar ao carrinho</button>
+    <button onclick="adicionarDarth_Burger()" class="botão">Adicionar ao carrinho</button>
+    <button onclick="removerDarth_Burger()" class="botão">Remover</button>
     </div>
 
 
@@ -159,15 +162,11 @@
     </div>
 
 
-
-
-
-
-    <div id="conteiner">
-        <h3>Seu pedido</h3>
-        <ul id="Lista_carinnho"></ul>
-        <p>Total: R$ <span id="total_pedido">0.00</span>></span></p>
+    <div id="carrinho">
+    <button onclick="alert(carrinho)"  class="botão">carrinho</button>
     </div>
+
+
 
     </div> 
     </li>
@@ -198,6 +197,8 @@
 
 
 
-<script src="Script_do_jedi_burgue.js"></script>
+
+
+    <script src="jedi_java.js"></script>
 </body>
 </html>
